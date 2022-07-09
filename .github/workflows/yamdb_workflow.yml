@@ -27,9 +27,9 @@ jobs:
     - name: Test with flake8 and django tests
       run: |
         # запуск проверки проекта по flake8
-        cd ../
         python -m flake8
         # запустить написанные разработчиком тесты
+        cd ../
         pytest
 
   build_and_push_to_docker_hub:
