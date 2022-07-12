@@ -91,7 +91,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         for filename in action.keys():
             print(filename)
-            path = os.path.join(settings.BASE_DIR, "static/data/") + filename
+            path = os.path.join(settings.BASE_DIR, "api/static/data/") + filename
             with open(path, "r", encoding="utf-8") as file:
                 reader = csv.reader(file)
                 next(reader)
