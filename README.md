@@ -38,7 +38,9 @@
 
    SECRET_KEY=ваш секретный ключ
 ```
+
 - Запуск Docker-compose:
+
 `cd infra
 `
 
@@ -46,18 +48,22 @@
 `
 
 - Выполните миграции:
+
 `sudo docker-compose exec web python manage.py migrate
 `
 
 - Выполните команду collectstatic:
+
 `sudo docker-compose exec web python manage.py collectstatic --no-input
 `
 
 - Заполните базу тестовыми данными:
+
 `sudo docker-compose exec web python manage.py load_info
 `
 
 - Создайте суперпользователя:
+
 `sudo docker-compose exec web python manage.py createsuperuser
 `
 
