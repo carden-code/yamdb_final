@@ -39,23 +39,27 @@
    SECRET_KEY=ваш секретный ключ
 ```
 - Запуск Docker-compose:
-    ```cd infra
-    ```
+`cd infra
+`
 
-    ```sudo docker-compose up -d
-    ```
+`sudo docker-compose up -d
+`
+
 - Выполните миграции:
-    ```sudo docker-compose exec web python manage.py migrate
-    ```
+`sudo docker-compose exec web python manage.py migrate
+`
+
 - Выполните команду collectstatic:
-    ```sudo docker-compose exec web python manage.py collectstatic --no-input
-    ```
+`sudo docker-compose exec web python manage.py collectstatic --no-input
+`
+
 - Заполните базу тестовыми данными:
-    ```sudo docker-compose exec web python manage.py load_info
-    ```
+`sudo docker-compose exec web python manage.py load_info
+`
+
 - Создайте суперпользователя:
-    ```sudo docker-compose exec web python manage.py createsuperuser
-    ```
+`sudo docker-compose exec web python manage.py createsuperuser
+`
 
 ### Примеры использования API:
 
