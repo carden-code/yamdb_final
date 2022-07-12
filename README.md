@@ -22,7 +22,20 @@
 `git clone git@github.com:carden-code/api_yamdb.git
 `
 
-#### Cоздайте в папке /infra файл .env и заполните его переменными окружения:
+- Переменные окружения:
+
+`cd infra
+`
+
+```echo "SECRET_KEY=YourSecretKey 
+   DB_ENGINE=django.db.backends.postgresql 
+   DB_NAME=postgres 
+   POSTGRES_USER=postgres 
+   POSTGRES_PASSWORD=postgres 
+   DB_HOST=db DB_PORT=5432" > .env
+```
+
+- Пример заполнения файла .env:
 
 ```DB_ENGINE=django.db.backends.postgresql # указываем, что работаем c postgresql
 
@@ -39,7 +52,7 @@
    SECRET_KEY=ваш секретный ключ
 ```
 
-- Запуск Docker-compose:
+- Cборка docker-compose:
 
 `cd infra
 `
@@ -65,6 +78,17 @@
 - Создайте суперпользователя:
 
 `sudo docker-compose exec web python manage.py createsuperuser
+`
+
+- Получаем ключ авторизации для получения токена:
+
+`sudo docker-compose exec web bash
+`
+
+`cd send_emails
+`
+
+`cat "файл с почтой"
 `
 
 ### Примеры использования API:
