@@ -65,7 +65,6 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd ~/yamdb_final/infra/
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env
