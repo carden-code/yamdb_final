@@ -110,5 +110,7 @@
 #### [Борисенко Вячеслав](https://github.com/carden-code "Борисенко Вячеслав")
 
 ### Лицензия:
-- Этот проект лицензируется в соответствии с лицензией MIT ![](https://miro.medium.com/max/156/1*A0rVKDO9tEFamc-Gqt7oEA.png "1")
+- Этот проект лицензируется в соответствии с лицензией MIT 
+
+![](https://miro.medium.com/max/156/1*A0rVKDO9tEFamc-Gqt7oEA.png "1")
 
